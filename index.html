@@ -16,6 +16,7 @@
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#referencias">Referencias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -23,23 +24,144 @@
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
+            <img src="https://placehold.co/150x150" alt="Foto de perfil de Luis Roca" style="border-radius: 50%;">
+            <p>
+                Para más información sobre mi trayectoria profesional, visita mi perfil en 
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>.
+            </p>
             <!-- Información sobre el perfil profesional -->
         </section>
+
         <section id="experiencia">
             <h2>Experiencia</h2>
+            <ol>
+                <li>Responsabilidad</li>
+                <li>Trabajo en equipo</li>
+                <li>Comunicación efectiva</li>
+            </ol>
             <!-- Detalles de la experiencia laboral -->
         </section>
+
         <section id="educacion">
             <h2>Educación</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
             <!-- Información educativa -->
         </section>
+
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>2023</th>
+                    <th>2024</th>
+                </tr>
+                <tr>
+                    <th>Proyecto A</th>
+                    <td>Completado</td>
+                    <td>En curso</td>
+                </tr>
+                <tr>
+                    <th>Proyecto B</th>
+                    <td>Pendiente</td>
+                    <td>Completado</td>
+                </tr>
+            </table>
+            <p><strong>Breve descripción sobre mí</strong></p>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/1-qjMS6C960" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
             <!-- Lista de habilidades -->
         </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
             <!-- Información de contacto -->
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="trabajo">Oferta de trabajo</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <fieldset>
+                    <legend>¿Cómo prefieres ser contactado?</legend>
+                    <label>
+                        <input type="radio" name="contacto" value="email" required>
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto" value="telefono" required>
+                        Teléfono
+                    </label>
+                </fieldset>
+
+                <label for="intereses">Áreas de interés:</label>
+                <select id="intereses" name="intereses[]" multiple required>
+                    <option value="desarrollo">Desarrollo</option>
+                    <option value="diseño">Diseño</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="investigacion">Investigación</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2828768861937!2d-79.96740343044347!3d-2.147934799999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b2e4e6e3%3A0x8e2e7e0b1a1c1d1a!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716132000000!5m2!1ses!2sec" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <article>
+                <blockquote>
+                    "Luis demostró una gran capacidad de liderazgo y compromiso en todos los proyectos en los que participó."
+                </blockquote>
+                <p>
+                    <strong>María Pérez</strong><br>
+                    Gerente de Proyectos<br>
+                    Trabajó con Luis en el desarrollo de soluciones tecnológicas para el sector educativo, destacando su profesionalismo y dedicación.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Siempre dispuesto a colaborar y aportar ideas innovadoras, Luis es un excelente compañero de equipo."
+                </blockquote>
+                <p>
+                    <strong>Carlos Gómez</strong><br>
+                    Jefe de Desarrollo<br>
+                    Colaboró con Luis en varios proyectos de software, resaltando su creatividad y habilidades técnicas.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "La ética profesional y la responsabilidad de Luis son cualidades que lo distinguen en cualquier entorno laboral."
+                </blockquote>
+                <p>
+                    <strong>Ana Torres</strong><br>
+                    Directora de Recursos Humanos<br>
+                    Supervisó a Luis durante dos años, valorando su integridad y su capacidad para resolver problemas de manera eficiente.
+                </p>
+            </article>
         </section>
     </main>
     <footer>
