@@ -199,8 +199,44 @@ nav > ul {
     margin: 1rem 0 0 0;
 }
 
+/* Solución para que los controles del formulario no sobresalgan del section */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+/* Ajusta el ancho de los controles del formulario para que no sobresalgan */
+form input,
+form select,
+form textarea,
+form fieldset,
+form button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Opcional: mejora la alineación de los radios dentro del fieldset */
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Opcional: mejora la presentación de los labels dentro del fieldset */
+form fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+/* Opcional: ajusta el fieldset para que no tenga tanto alto */
+form fieldset label {
+    margin-bottom: 0.5rem;
+}
+
+/* Opcional: elimina el ancho completo de los radios */
+form fieldset input[type="radio"] {
+    width: auto;
 }
