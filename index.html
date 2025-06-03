@@ -10,6 +10,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <style>
+        :root {
+            --color-principal: #2F4F4F;   /* Verde petróleo */
+            --color-acento: #B8860B;      /* Oro oscuro */
+            --color-fondo: #F8F8F0;       /* Marfil */
+            --color-texto: #2B2B2B;       /* Gris casi negro */
+            --color-borde: #A9A9A9;       /* Gris cálido */
+        }
+
+        /* Fondo general */
+        body {
+            background: var(--color-fondo);
+            color: var(--color-texto);
+        }
+
+        /* Encabezado y navegación */
+        header {
+            background: var(--color-principal);
+            color: #fff;
+        }
+        nav a {
+            color: var(--color-acento);
+        }
+        nav a:hover {
+            color: #fff;
+            background: var(--color-acento);
+        }
+
+        /* Secciones */
+        section {
+            background: #fff;
+            border: 0.2pt solid var(--color-borde);
+        }
+
+        /* Títulos */
+        h1 {
+            color: #fff;
+        }
+        h2, h3 {
+            color: var(--color-principal);
+        }
+        .subtitle {
+            color: rgb(151 156 165 / 0.89);
+        }
+
+        /* Botones */
+        button[type="submit"] {
+            background: var(--color-acento);
+            color: #fff;
+        }
+        button[type="submit"]:hover {
+            background: var(--color-principal);
+        }
+
+        /* Bordes y detalles */
+        table, th, td {
+            border-color: var(--color-borde);
+        }
+        fieldset {
+            border: 1px solid var(--color-borde);
+        }
+        legend {
+            color: var(--color-principal);
+        }
+
+        /* Enlaces */
+        a {
+            color: var(--color-acento);
+        }
+        a:hover {
+            color: var(--color-principal);
+        }
+        blockquote {
+            border-left: 4px solid var(--color-acento);
+        }
+    </style>
 </head>
 <body>
     <header>
