@@ -54,7 +54,19 @@ h2, h3 {
     margin-top: 2rem;
 }
 section {
-    margin-bottom: 2rem;
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd;
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px;
+
+    /* relleno (espacio interno) de
+    1.5% en la parte superior e inferior y
+    0.8% a los lados derecho e izquierdo. */
+    padding: 1.5% 0.8%;
+
+    /* Margen inferior ajustado */
+    margin-bottom: 1.2rem;
 }
 table {
     width: 100%;
@@ -135,11 +147,13 @@ blockquote {
     text-transform: uppercase;
 }
 
-@media (max-width: 700px) {
-    main {
-        padding: 1rem;
-    }
-    table, th, td {
-        font-size: 0.95rem;
-    }
+/* <p> dentro de <footer>: alineación derecha e itálica */
+footer p {
+    text-align: right;
+    font-style: italic;
+}
+
+/* <ul> hija inmediata de <nav>: sin viñetas */
+nav > ul {
+    list-style: none;
 }
