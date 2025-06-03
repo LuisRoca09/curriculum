@@ -1,8 +1,12 @@
+/* Aplica la fuente a todos los elementos */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Paleta de colores y fuentes */
 body {
     background: #f4f4f4;
     color: #1c1c1c;
-    font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -38,12 +42,14 @@ main {
     padding: 2rem 2.5rem;
 }
 h1 {
-    font-family: 'Merriweather', serif;
+    /* Alineación del texto */
+    text-align: center;
+    /* Grosor de la fuente negrita */
+    font-weight: bold;
     color: #fff;
     margin: 0;
 }
 h2, h3 {
-    font-family: 'Roboto Slab', serif;
     color: #2c3e50;
     margin-top: 2rem;
 }
@@ -77,7 +83,6 @@ input, select, textarea {
     margin: 0.3rem 0 1rem 0;
     border: 1px solid #7f8c8d;
     border-radius: 4px;
-    font-family: 'Open Sans', Arial, sans-serif;
     background: #f4f4f4;
     color: #1c1c1c;
 }
@@ -127,9 +132,4 @@ blockquote {
     table, th, td {
         font-size: 0.95rem;
     }
-}
-
-/* Aplica la fuente a todos los elementos */
-* {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
