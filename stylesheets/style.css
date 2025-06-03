@@ -47,12 +47,13 @@ nav a:hover {
     color: #1c1c1c;
 }
 main {
-    max-width: 900px;
+    max-width: 700px;
     margin: 2rem auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(44,62,80,0.07);
-    padding: 2rem 2.5rem;
+    padding: 1.2rem 1.5rem;
+    width: 95vw;
 }
 h1 {
     /* Alineación del texto */
@@ -76,7 +77,7 @@ section {
     /* relleno (espacio interno) de
     1.5% en la parte superior e inferior y
     0.8% a los lados derecho e izquierdo. */
-    padding: 1.5% 0.8%;
+    padding: 1rem 1.2rem;
 
     /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
@@ -237,4 +238,14 @@ form fieldset label {
 /* Opcional: radios sin ancho completo */
 form fieldset input[type="radio"] {
     width: auto;
+}
+
+@media (max-width: 800px) {
+    main {
+        max-width: 98vw;
+        padding: 0.5rem;
+    }
+    section {
+        padding: 0.5rem 0.5rem;
+    }
 }
