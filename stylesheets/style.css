@@ -128,3 +128,8 @@ blockquote {
         font-size: 0.95rem;
     }
 }
+
+/* Aplica la fuente a todos los elementos */
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
