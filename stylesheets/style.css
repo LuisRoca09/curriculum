@@ -10,11 +10,21 @@ body {
     margin: 0;
     padding: 0;
 }
-header, footer {
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1.5rem 0 0.5rem 0;
+    text-align: center;
+}
+footer {
     background: #2c3e50;
     color: #fff;
     padding: 1.5rem 0;
     text-align: center;
+}
+nav {
+    max-width: 700px;
+    margin: 0 auto;
 }
 nav ul {
     /* Activa el modelo de diseño Flexbox*/
@@ -47,13 +57,12 @@ nav a:hover {
     color: #1c1c1c;
 }
 main {
-    max-width: 700px;
-    margin: 2rem auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
-    padding: 1.2rem 1.5rem;
-    width: 95vw;
+    max-width: 700px;      /* Limita el ancho máximo */
+    width: 95vw;           /* Que use casi todo el ancho en móviles */
+    margin: 2rem auto;     /* Centrado */
+    background: none;      /* El fondo blanco solo en las secciones */
+    box-shadow: none;      /* Sombra solo en las secciones */
+    padding: 0;            /* Sin padding extra */
 }
 h1 {
     /* Alineación del texto */
@@ -68,29 +77,15 @@ h2, h3 {
     margin-top: 2rem;
 }
 section {
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    background: #fff;
     border: 0.2pt solid #cedddd;
-
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 2px 8px 2px;
-
-    /* relleno (espacio interno) de
-    1.5% en la parte superior e inferior y
-    0.8% a los lados derecho e izquierdo. */
-    padding: 1rem 1.2rem;
-
-    /* Margen inferior ajustado */
-    margin-bottom: 1.2rem;
-
-    /* borde redondeado con un radio de 5 píxeles */
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
-
-    /* sombra a un elemento */
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 table {
     width: 100%;
@@ -241,11 +236,12 @@ form fieldset input[type="radio"] {
 }
 
 @media (max-width: 800px) {
-    main {
+    nav {
+        max-width: 98vw;
+        padding: 0 0.5rem;
+    }
+    main, section {
         max-width: 98vw;
         padding: 0.5rem;
-    }
-    section {
-        padding: 0.5rem 0.5rem;
     }
 }
