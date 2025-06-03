@@ -31,7 +31,7 @@
         .container {
             max-width: 1100px;
             margin: 2.5rem auto;
-            background: #fff;
+            background: #fff; /* Mantén el fondo blanco para el contenedor principal */
             border-radius: 18px;
             box-shadow: 0 4px 24px rgba(44,79,79,0.07);
             padding: 0 0 2rem 0;
@@ -84,15 +84,15 @@
 
         /* Secciones */
         section {
-            background: #fff;
+            background: #F4F6F8;
             border: none;
             box-shadow: 0 2px 12px rgba(44,79,79,0.05);
             margin: 1.5rem 0;
             width: 100%;
             box-sizing: border-box;
             border-radius: 14px;
-            padding: 2.5rem 2.5rem 2rem 2.5rem;
-            display: block; /* Cambia a bloque para alineación izquierda */
+            padding: 1.2rem 2.5rem 2rem 2.5rem; /* Reduce el padding superior */
+            display: block;
             min-height: 120px;
         }
 
@@ -100,7 +100,8 @@
             align-self: unset;
             text-align: left;
             font-size: 2.3rem;
-            margin-bottom: 1.5rem;
+            margin-top: 0;           /* Elimina margen superior */
+            margin-bottom: 1rem;     /* Reduce margen inferior */
             color: #29506b;
             font-weight: 700;
             letter-spacing: 0.02em;
