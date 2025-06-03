@@ -28,7 +28,7 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1400px; /* O un valor mayor, según tu preferencia */
             margin: 2rem auto;
             background: #fff;
             border-radius: 18px;
@@ -81,12 +81,25 @@
         /* Secciones */
         section {
             background: #fff;
-            border: 0.2pt solid var(--color-borde);
+            /* Elimina el borde */
+            border: none;
+            /* Mantén la sombra */
+            box-shadow: 0 4px 24px rgba(44,79,79,0.07);
+            margin: 1.2rem 0;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 18px;
         }
 
         /* Títulos */
         h1 {
-            color: #fff;
+            color: #2F4F4F; /* Verde petróleo, formal y elegante */
+            font-family: 'Merriweather', serif;
+            font-size: 2.7rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 8px rgba(44,79,79,0.08);
         }
         h2, h3 {
             color: var(--color-principal);
