@@ -87,6 +87,16 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+section > form {
+    /* Activa el modelo de diseño grid */
+    display: grid;
+
+    /* Estructura de una sola columna que ocupa todo el ancho disponible */
+    grid-template-columns: 1fr;
+
+    /* Espacio uniforme de 1rem entre filas y columnas */
+    gap: 1rem;
+}
 table {
     width: 100%;
     border-collapse: collapse;
