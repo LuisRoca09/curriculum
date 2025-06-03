@@ -125,6 +125,16 @@ blockquote {
     font-style: italic;
     background: #f9f9f9;
 }
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+
 @media (max-width: 700px) {
     main {
         padding: 1rem;
